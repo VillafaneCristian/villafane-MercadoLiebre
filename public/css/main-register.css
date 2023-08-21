@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+.main__registro{
+    background-color: #ebebeb;
+}
+
+.formularioRegistro{
+    padding: 20px 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.formulario__labelInput{
+    margin-bottom: 15px;
+}
+
+select{
+    margin-bottom: 15px;
+}
+
+.formulario__labelInput label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.formulario__Input{
+    width: 100%;
+    padding: 8px;
+}
+
+.formulario__boton{
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.formulario__botones{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.formulario__checkbox{
+    display: flex;
+}
+
+.formulario__checkbox label{
+    flex-grow: 1;
+}
+
+legend{
+    font-style: italic;
+}
+
+h6{
+    text-align: center;
+    color: #666666;
+}

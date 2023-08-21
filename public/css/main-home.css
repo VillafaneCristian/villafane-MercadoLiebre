@@ -1,0 +1,109 @@
+.main{
+    background-color: #ebebeb;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.main__banner img{
+    width: 100%;
+}
+
+.section{
+   width: 90vw;
+   margin: auto;
+   max-width: 1200px;
+}
+
+.section__titulo{
+    font-size: 24px;
+    width: 100%;
+    color: #666666;
+}
+
+.article{
+    margin-bottom: 10px;    
+    flex-grow: 1;
+}
+
+.article__imagen{
+    width: 100%;
+}
+
+.article__detalleProducto{
+    background-color: #ffffff;
+    padding: 15px;
+    position: relative;
+}
+
+.article__camion{
+    display:block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+}
+
+.article__contenedorPrecioDescuento{
+    display: flex;
+    align-items: center;
+
+}
+
+.article__precio{
+    font-size: 18px;
+    width: 30%;
+}
+
+.article__descuento{
+    color: #39b54a;
+    font-size: 16px;
+    width: 70%;
+}
+
+.article__descripcion{
+    display: none;
+    font-size: 16px;
+    color: #666666;
+}
+
+h6{
+    text-align: center;
+    color: #666666;
+}
+
+
+@media(min-width: 768px){
+
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+        margin: 10px;
+    }
+
+    .article__descripcion{
+        display: block;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+    .article{
+        width: 20%;
+    }
+
+}

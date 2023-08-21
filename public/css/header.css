@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926 ;
+    padding: 20px;
+}
+
+.header__logo{
+    width: 200px;
+}
+
+.header__titulo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.header__texto{
+    font-weight: 400;
+    text-align: center;
+}
+
+.header__hamburgueza{
+    background-color: #03264C;
+    color: #FFFFFF;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+.header__busqueda{
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.header__busqueda input{
+    border-radius: 10px;
+    border: none;
+    padding: 10px;    
+}
+
+.header__lupa{
+    background-color: #ffffff;
+    position: absolute;
+    right: 8px;
+    top: 11px;
+}
+
+.header__nav{
+    display: none;
+}
+
+.header__nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    color: #000000;
+}
+
+
+@media(min-width: 768px){
+
+    .header__titulo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__texto{
+        max-width: 200px;
+    }
+
+    .header__hamburgueza{
+        display: none;
+    }
+
+    .header__nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .header__nav i{
+        margin-left: 5px;
+    }
+
+    .header__nav ul{
+        display: flex;
+    }
+
+    .header__nav li{
+        margin: 0 5px;
+    }
+
+    .header__busqueda{
+        flex-grow: 0.5;
+    }
+
+    .header__busqueda input{
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+    .header__titulo, .header__nav{
+        max-width: 1200px;
+        margin: auto;
+
+    }
+
+    .header__logo{
+        width: 250px;
+    }
+
+    .header__texto{
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .header__nav li{
+        margin: 0 10px;
+    }
+
+    .header__nav {
+        font-size: 19px;
+        margin-top: 40px;
+    }
+
+}

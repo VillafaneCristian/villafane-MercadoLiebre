@@ -10,6 +10,16 @@ app.get('/',function(req,res){
     res.sendFile(homePath); 
 });
 
+app.get('/login',function(req,res){
+    const loginPath = path.join(__dirname,'views/login.html');
+    res.sendFile(loginPath);
+})
+
+app.get('/register',function(req,res){
+    const RegisterPath = path.join(__dirname,'views/register.html');
+    res.sendFile(RegisterPath);
+})
+
 const PORT = 3000;
 app.listen(PORT,()=>{
     console.log(`Servidor corriendo en el puerto ${PORT}`);

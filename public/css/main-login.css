@@ -1,0 +1,31 @@
+.main__login{
+    background-color: #ebebeb;
+}
+
+.formulario__login{
+    padding: 20px 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.formulario__elementos{
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.formulario__botonLogin{
+    background-color: #39b54a;
+    border: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+h6{
+    text-align: center;
+    color: #666666;
+}
+
